@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>藍牙定位器 - 隱私權政策 | Bluetooth Finder - Privacy Policy</title>
+    <style>
+        :root {
+            --primary: #007aff;
+            --background: #f5f5f7;
+            --surface: #ffffff;
+            --text-primary: #1d1d1f;
+            --text-secondary: #86868b;
+            --border: #e5e5e7;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #0a84ff;
+                --background: #1c1c1e;
+                --surface: #2c2c2e;
+                --text-primary: #f5f5f7;
+                --text-secondary: #aeaeb2;
+                --border: #3a3a3c;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: var(--surface);
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0 0 8px 0;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin: 32px 0 16px 0;
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+            padding-left: 12px;
+        }
+
+        p, li {
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .lang-section {
+            margin-bottom: 60px;
+        }
+
+        .divider {
+            height: 1px;
+            background-color: var(--border);
+            margin: 40px 0;
+        }
+
+        .meta-info {
+            font-size: 13px;
+            color: var(--text-secondary);
+            margin-top: 40px;
+            border-top: 1px solid var(--border);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Traditional Chinese Version -->
+    <div class="lang-section" id="zh">
+        <header>
+            <h1>隱私權政策 (Privacy Policy)</h1>
+            <p style="color: var(--text-secondary); margin: 0;">適用於：藍牙定位器 (com.SyntaxSail.BluetoothFinder)</p>
+        </header>
+
+        <p>歡迎使用由我們開發的「藍牙定位器」（以下簡稱「本應用程式」）。我們非常重視您的個人隱私與資料安全。本隱私權政策旨在說明本應用程式如何處理您在使用過程中的相關資料。</p>
+
+        <h2>1. 個人資料的收集與使用</h2>
+        <p><strong>本應用程式是一部完全運行於您本地裝置的工具。我們不會將您的個人隱私資料上傳至任何雲端或第三方伺服器。</strong></p>
+        <ul>
+            <li><strong>藍牙掃描與定位權限 (Bluetooth & Location)</strong>：
+                <ul>
+                    <li><strong>用途</strong>：本應用程式需要存取您裝置的藍牙功能與位置資訊（精確定位權限），用以掃描周遭的藍牙低功耗 (BLE) 廣播設備（如智慧手環、防丟器、藍牙耳機等），並計算相對訊號強度 (RSSI)。</li>
+                    <li><strong>儲存機制</strong>：當您啟用斷開記錄時，本應用程式會取得當前 GPS 經緯度，並僅儲存在您手機本地的 SQLite (Room) 安全資料庫中。此資料僅供您在 App 內檢視歷史定位。</li>
+                    <li><strong>合規聲明</strong>：我們承諾絕不在背景偷偷搜集位置，亦絕不傳輸您的位置資訊至本機以外的任何地方。</li>
+                </ul>
+            </li>
+            <li><strong>通知權限 (Notifications)</strong>：
+                <ul>
+                    <li>當您啟用「斷開警報」時，App 會在背景監測連接狀態。若偵測到斷開連線，將透過本地系統通知與警報音向您發送提醒。這項功能不需要與任何伺服器進行數據交換。</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>2. 訂閱與支付資訊</h2>
+        <p>本應用程式提供付費訂閱功能（解鎖高級防丟警報與親友互找功能）。</p>
+        <ul>
+            <li>所有的交易與付費流程皆透過 <strong>Google Play 官方應用內購買系統 (Google Play Billing API)</strong> 與服務商 <strong>RevenueCat</strong> 進行。</li>
+            <li>我們不會取得、也不會收集您的信用卡卡號、銀行帳號等任何付款敏感財務資訊。所有交易數據均受 Google Play 的隱私權政策保護。</li>
+        </ul>
+
+        <h2>3. 第三方服務與套件</h2>
+        <p>本應用程式僅整合以下極為安全的 SDK：</p>
+        <ul>
+            <li><strong>RevenueCat SDK</strong>：僅用於驗證和管理您的付費會員訂閱狀態，不收集任何個人身分資料。</li>
+        </ul>
+
+        <h2>4. 資料保存與刪除</h2>
+        <p>所有掃描與定位記錄均保存在您裝置的本地資料庫中。您可以隨時透過以下方式刪除：</p>
+        <ul>
+            <li>在應用程式的設備詳情頁面手動點選「清除歷史記錄」。</li>
+            <li>在系統設定中清除本應用程式的快取與數據，或是直接卸載本應用程式，本機資料將一併被永久清除。</li>
+        </ul>
+
+        <h2>5. 聯絡我們</h2>
+        <p>如果您對本隱私權政策或本應用程式有任何疑問，歡迎透過電子郵件與我們聯絡：<a href="mailto:support@syntaxsail.com">support@syntaxsail.com</a>。</p>
+
+        <div class="meta-info">
+            <p>最新更新日期：2026 年 7 月 2 日</p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- English Version -->
+    <div class="lang-section" id="en">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p style="color: var(--text-secondary); margin: 0;">For: Bluetooth Finder (com.SyntaxSail.BluetoothFinder)</p>
+        </header>
+
+        <p>Welcome to Bluetooth Finder (hereinafter referred to as "the App"). We highly value your personal privacy and data security. This Privacy Policy describes how the App handles your information during use.</p>
+
+        <h2>1. Data Collection and Usage</h2>
+        <p><strong>The App is a fully local tool that runs entirely on your device. We do NOT collect, harvest, or upload your personal data to any cloud servers or third parties.</strong></p>
+        <ul>
+            <li><strong>Bluetooth & Location Permissions</strong>:
+                <ul>
+                    <li><strong>Purpose</strong>: The App requires access to your device's Bluetooth and Location services (Fine Location) to scan for nearby Bluetooth Low Energy (BLE) devices (such as smart tags, smartbands, or headphones) and compute signal strength (RSSI).</li>
+                    <li><strong>Storage</strong>: If you enable disconnect tracking, the App retrieves the current GPS coordinates and saves them solely in a local SQLite (Room) database on your device. This data is used only to show you the last seen map pin in the App.</li>
+                    <li><strong>Compliance</strong>: We guarantee that your location coordinates are never sent off-device or transmitted to any external networks.</li>
+                </ul>
+            </li>
+            <li><strong>Notification Permissions</strong>:
+                <ul>
+                    <li>When the "Disconnect Alert" is enabled, the App runs a foreground service to monitor connection states. If a disconnection is detected, a local system notification and sound are triggered. No data is sent or exchanged.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>2. Subscriptions and Payments</h2>
+        <p>The App offers premium subscription features (unlocking Disconnect Alerts and Family Summon).</p>
+        <ul>
+            <li>All subscription orders and payments are securely processed via the official <strong>Google Play Billing API</strong> and managed by <strong>RevenueCat</strong>.</li>
+            <li>We do not collect or store any payment information, credit card details, or financial accounts. All billing activities are governed by Google Play's Privacy Policy.</li>
+        </ul>
+
+        <h2>3. Third-Party Services and SDKs</h2>
+        <p>The App integrates only the following trusted SDK:</p>
+        <ul>
+            <li><strong>RevenueCat SDK</strong>: Used strictly to verify and check your Premium subscription entitlements. No personally identifiable information (PII) is collected.</li>
+        </ul>
+
+        <h2>4. Data Retention and Deletion</h2>
+        <p>All scanned records and device histories are stored locally on your physical device. You can delete them at any time by:</p>
+        <ul>
+            <li>Clicking "Clear History" inside the device details page.</li>
+            <li>Clearing App data/cache in Android System Settings, or uninstalling the App. Doing so will permanently wipe all local database records.</li>
+        </ul>
+
+        <h2>5. Contact Us</h2>
+        <p>If you have any questions or feedback regarding this Privacy Policy, please contact us via email at: <a href="mailto:support@syntaxsail.com">support@syntaxsail.com</a>.</p>
+
+        <div class="meta-info">
+            <p>Last Updated: July 2, 2026</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
